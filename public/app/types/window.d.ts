@@ -44,6 +44,12 @@ export declare global {
      * isn't set up yet when the OFREP provider's baseUrl is constructed.
      */
     __grafanaOFREPRootUrlEnabled?: boolean;
+
+    /**
+     * Set by the frontend service to the preview folder name when this page is
+     * serving frontend assets from a PR preview build instead of the release assets.
+     */
+    __grafanaPreviewAssets?: string;
   }
 
   // Augment DOMParser to accept TrustedType sanitised content
